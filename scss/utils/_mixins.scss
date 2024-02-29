@@ -46,5 +46,13 @@
     width: 60%;
     border: 5px solid $finadsBlue;
     border-radius: 30px;
+
+    @media (min-width: 768px){
+        width: 35%;
+    }
+
+    @media (min-width: 1024px){
+        width: 25%;
+    }
 }
 

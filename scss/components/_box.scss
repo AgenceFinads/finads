@@ -50,10 +50,14 @@
                 font-size: 30px;
             }
 
-            @media (min-width: 768px){
+            @media (min-width: 1024px){
                 font-size: 1.5vw;
                 width: 60%;
             }
+        }
+
+        .firstSection__Calendly {
+            margin-top: 15px;
         }
     }
 }

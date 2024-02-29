@@ -3,6 +3,11 @@
 /* Les caractéristiques de base du site ici */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+  transition-duration: 0.5s;
+}
+
 body {
   margin: 0;
   padding-top: 12.5vh;
@@ -15,6 +20,11 @@ body {
 }
 
 /* L'ensemble des typographies qui vont être utilisées sur le site web. */
+/* Fonctions afférentes au site internet */
+/* Différents mixins à utiliser pour la page web */
+/* Variables afférentes au site internet */
+/* Fonctions afférentes au site internet */
+/* Variables afférentes au site internet */
 h1, h2, h3, h4 {
   font-family: "Ubuntu", sans-serif;
 }
@@ -24,6 +34,8 @@ p, a, button {
 }
 
 a {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   color: inherit;
 }
@@ -79,11 +91,14 @@ a {
     font-size: 30px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .firstSection .firstSection__content--description {
     font-size: 1.5vw;
     width: 60%;
   }
+}
+.firstSection .firstSection__content .firstSection__Calendly {
+  margin-top: 15px;
 }
 
 .secondSection {
@@ -100,6 +115,16 @@ a {
   width: 60%;
   border: 5px solid #00FFFF;
   border-radius: 30px;
+}
+@media (min-width: 768px) {
+  .secondSection .secondSection__blueLine {
+    width: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .secondSection .secondSection__blueLine {
+    width: 25%;
+  }
 }
 .secondSection .secondSection__title {
   color: black;
@@ -257,6 +282,16 @@ a {
   border: 5px solid #00FFFF;
   border-radius: 30px;
 }
+@media (min-width: 768px) {
+  .thirdSection .thirdSection__blueLine {
+    width: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .thirdSection .thirdSection__blueLine {
+    width: 25%;
+  }
+}
 .thirdSection .thirdSection__title {
   color: white;
   margin: 35px auto;
@@ -388,6 +423,16 @@ a {
   border: 5px solid #00FFFF;
   border-radius: 30px;
 }
+@media (min-width: 768px) {
+  .fourthSection .fourthSection__blueLine {
+    width: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .fourthSection .fourthSection__blueLine {
+    width: 25%;
+  }
+}
 .fourthSection .fourthSection__title {
   color: black;
   margin: 35px auto;
@@ -418,6 +463,16 @@ a {
   width: 60%;
   border: 5px solid #00FFFF;
   border-radius: 30px;
+}
+@media (min-width: 768px) {
+  .fifthSection .fifthSection__blueLine {
+    width: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .fifthSection .fifthSection__blueLine {
+    width: 25%;
+  }
 }
 .fifthSection .fifthSection__title {
   color: black;
@@ -532,15 +587,17 @@ a {
 }
 
 .btnMeeting {
-  font-size: 100%;
-  height: 8%;
-  width: 60%;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  padding: 16px 24px;
+  margin-top: 10px;
   color: #2D2D2D;
   background-color: white;
 }
 @media (min-width: 768px) {
   .btnMeeting {
-    font-size: 130%;
+    font-size: 100%;
     width: 40%;
   }
 }
@@ -738,6 +795,10 @@ header .navbar .navbar__content--text {
   font-size: 1.5vh;
   color: white;
   margin: 0;
+  transition: color 0.3s ease;
+}
+header .navbar .navbar__content--text:hover {
+  color: #00FFFF;
 }
 @media (min-width: 1024px) {
   header .navbar .navbar__content--text {

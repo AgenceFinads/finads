@@ -1,5 +1,10 @@
 /* Les caractéristiques de base du site ici */
 
+html {
+    scroll-behavior: smooth;
+    transition-duration: 0.5s;
+}
+
 body {
     margin: 0;
     padding-top: 12.5vh;

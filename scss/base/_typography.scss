@@ -1,5 +1,11 @@
 /* L'ensemble des typographies qui vont être utilisées sur le site web. */
 
+// Import des variables, mixins et fonctions :
+
+@import '../utils/functions';
+@import '../utils/mixins';
+@import '../utils/variables';
+
 // Ubuntu :
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
@@ -20,6 +26,8 @@ p, a, button {
 }
 
 a {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     color:inherit;
 }
