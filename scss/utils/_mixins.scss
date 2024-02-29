@@ -1,0 +1,50 @@
+/* Différents mixins à utiliser pour la page web */
+
+@import '../utils/variables';
+@import '../utils/functions';
+
+@mixin sectionParameter {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vw;
+}
+
+@mixin sectionTitle {
+    margin: 35px auto;
+    width: 80%;
+    text-align: center;
+}
+
+@mixin btn {
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+@mixin card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    width: 80%;
+    padding: 0 5vw;
+}
+
+@mixin cardTitle {
+    font-size: 24px;
+    text-align: center;
+}
+
+@mixin cardDescription {
+    text-align: justify;
+    font-weight: 400;
+}
+
+@mixin blueLine {
+    margin: 60px auto 0;
+    width: 60%;
+    border: 5px solid $finadsBlue;
+    border-radius: 30px;
+}
+

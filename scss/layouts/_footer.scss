@@ -1,0 +1,102 @@
+/* Le footer du site sera défini ici */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 89.5vh;
+    width: 100%;
+    background-color: black;
+
+    @media (min-width: 1024px){
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 40.5vh;
+    }
+
+    .footer__logo {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        width: 60%;
+
+        @media (min-width: 1024px){
+                width: 294px;
+                margin: 0 2vw;
+        }
+
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+
+    .footer__title {
+        margin: 10px auto;
+        text-align: center;
+        color: white;
+
+        @media (min-width: 768px){
+            font-size: 36px;
+        }
+
+        @media (min-width: 1024px){
+            font-size: 24px;
+        }
+    }
+
+    .footer__agency, .footer__contact {
+        display: flex;
+        flex-direction: column;
+
+        .footer__link, .footer__mail {
+            margin: 5px auto;
+            text-align: center;
+            font-weight: 400;
+            color: white;
+
+            @media (min-width: 768px){
+                font-size: 24px;
+            }
+
+            @media (min-width: 1024px){
+                font-size: 18px;
+            }
+
+            &--instagram, &--linkedin {
+                font-size: 82px;
+                margin: 10px;
+                color: white;
+
+                }
+        }
+    }
+
+    .specialContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px auto;
+        width: 80%;
+
+        @media (min-width: 1024px){
+            display: flex;
+            flex-direction: row;
+            padding: 0 2vw;
+            margin: 184px 0 0 0;
+            width: 10%;
+
+            a {
+                margin: 0 10px;
+                text-decoration: none;
+                color: white;
+                font-weight: 400;
+                font-size: 64px;
+            }
+        }
+
+
+
+    }
+}

@@ -1,0 +1,466 @@
+/* Les div et autres boîtes de contenus seront stockées ici */
+
+@import '../utils/variables';
+@import '../utils/mixins';
+
+
+// Première section du site internet :
+
+.firstSection {
+    display: flex;
+    justify-content: center;
+    height: 99.5vh;
+    background-image: linear-gradient(to top, rgba(0, 255, 255, 0.5) 0%, rgba(0, 0, 0, 1) 60%);
+
+    @media (min-width: 1024px){
+        height: 87.5vh;
+    }
+
+
+    .firstSection__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        margin: 0 5vw;
+
+        &--title {
+            margin-top: 0;
+            font-size: 12vw;
+            text-align: center;
+            color: white;
+
+            @media (min-width: 768px){
+                margin: 0;
+            }
+
+            @media (min-width: 1024px){
+                font-size: 8.5vw;
+            }
+        }
+
+        &--description {
+            font-weight: 500;
+            text-align: center;
+            color: white;
+
+            @media (min-width: 768px){
+                font-size: 30px;
+            }
+
+            @media (min-width: 768px){
+                font-size: 1.5vw;
+                width: 60%;
+            }
+        }
+    }
+}
+
+// Deuxième section du site internet :
+
+.secondSection {
+    /*height: 146.5vh;
+    background-color: white;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+
+    //@include sectionParameter;
+
+    .secondSection__blueLine {
+        @include blueLine;
+    }
+
+    .secondSection__title {
+        color: black;
+        @include sectionTitle;
+
+        @media (min-width: 768px){
+            font-size: 200%;
+        }
+    }
+
+    .secondSection__card {
+        margin: 20px auto 60px;
+        background-color: #F2F2F2;
+
+        @include card;
+
+        @media (min-width: 1024px){
+            flex-direction: row-reverse;
+            padding: 0 2vw;
+        }
+
+        &--img {
+            display: flex;
+            justify-content: center;
+            margin: 2.78vh auto;
+            height: 39vh;
+            width: 100%;
+            border-radius: 25px;
+
+            @media (min-width: 768px){
+                height: 55vh;
+            }
+
+            @media (min-width: 1024px){
+                height: 510px;
+                width: 530px;
+                margin: auto auto;
+            }
+
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                border-radius: 25px;
+            }
+        }
+
+        &--title {
+            color: $textGrey;
+
+            @include cardTitle;
+
+            @media (min-width:768px){
+                font-size: 300%;
+            }
+
+            @media (min-width: 1024px){
+                text-align: justify;
+                font-size: 190%;
+                width: 90%;
+            }
+        }
+
+        &--description {
+            font-size: 4vw;
+            font-weight: 400;
+            color: $textGrey;
+
+            @include cardDescription;
+
+            @media (min-width: 1024px){
+                font-size: 1.4vw;
+                font-weight: 400;
+                color: #2D2D2D;
+                text-align: justify;
+                font-weight: 400;
+                width: 90%;
+            }
+        }
+
+        &--footer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-bottom: 2.78vh;
+
+            @media (min-width: 1024px){
+                flex-direction: row;
+                width: 90%;
+            }
+
+            .caracteristics {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 44%;
+                margin: 5px;
+
+                @media (min-width: 1024px){
+                    width: 40%;
+                }
+
+                .verticalLine {
+                    height: 64px;
+                    width: 3px;
+                    background-color: #00FFFF;
+                    border: 2px solid #00FFFF;
+                    border-radius: 30px;
+
+                    @media (min-width: 768px){
+                        width: 6px;
+                    }
+                }
+
+                .caracteristics__title {
+                    font-size: 4vw;
+                    margin: 0 10px;
+                    width: 100%;
+
+                    @media (min-width: 1024px){
+                        font-size: 1.5vw;
+                        width: 50%;
+                    }
+                }
+
+            }
+        }
+
+        &--textpart {
+            @media (min-width: 1024px){
+                width: 60%;
+                height: 100%;
+            }
+        }
+    }
+
+}
+
+// Troisième section du site internet :
+
+.thirdSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+
+    .thirdSection__blueLine {
+        @include blueLine;
+    }
+
+    .thirdSection__title {
+        color: white;
+        @include sectionTitle;
+
+        @media (min-width: 768px) {
+            font-size: 300%;
+        }
+
+        @media (min-width: 1024px){
+            font-size: 200%;
+            width: 35%;
+        }
+    }
+
+    .thirdSection_displayFunction {
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            }
+        }
+
+    .thirdSection__card {
+        margin: 10px auto;
+        width: 80%;
+        background-color: #1A1A1A;
+
+        @include card;
+
+        @media (min-width: 1024px){
+            justify-content: normal;
+            width: 20%;
+            padding: 0 2vw;
+        }
+
+        &--img {
+            display: flex;
+            justify-content: center;
+            margin: 2.78vh auto;
+            height: 160px;
+            width: 160px;
+
+            @media (min-width: 768px){
+                height: 320px;
+                width: 100%;
+            }
+
+            @media (min-width: 1024px){
+                height: 320px;
+                width: 65%;
+            }
+
+            img {
+                object-fit: contain;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &--title {
+            color: white;
+
+            @include cardTitle;
+
+            @media (min-width: 768px){
+                font-size: 36px;
+            }
+
+            @media (min-width: 1024px){
+                font-size: 150%;
+            }
+        }
+
+        &--description {
+            color: white;
+
+            @include cardDescription;
+
+            @media (min-width: 768px){
+                font-size: 26px;
+            }
+
+            @media (min-width: 1024px){
+                text-align: center;
+                font-size: 18px;
+                font-weight: 300;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .thirdSection__price {
+        margin: 30px auto 60px;
+        font-size: 16px;
+        text-align: center;
+        width: 80%;
+        color: #B9B9B9;
+
+        @media (min-width: 768px){
+            font-size: 26px;
+        }
+
+        @media (min-width: 1024px){
+            font-size: 14px;
+        }
+    }
+}
+
+// Quatrième section du site internet dédiée à la prise de rendez-vous :
+
+.fourthSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+
+    .fourthSection__blueLine {
+        @include blueLine;
+    }
+
+    .fourthSection__title {
+        color: black;
+        @include sectionTitle;
+
+        @media (min-width: 768px){
+            font-size: 300%;
+        }
+
+        @media (min-width: 1024px){
+            font-size: 200%;
+            width: 35%;
+        }
+    }
+}
+
+// Cinqquième section du site internet :
+
+.fifthSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+
+    //@include sectionParameter;
+
+    .fifthSection__blueLine {
+        @include blueLine;
+    }
+
+    .fifthSection__title {
+        color: black;
+        @include sectionTitle;
+
+        @media (min-width: 768px){
+            font-size: 300%;
+        }
+
+        @media (min-width: 1024px){
+            font-size: 200%;
+            width: 35%;
+        }
+    }
+
+    .fifthSection__displayFunction {
+
+        @media (min-width: 1024px){
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0 auto 35px;
+            width: 80%;
+        }
+
+        .fifthSection__description {
+            margin: 0 auto 35px;
+            text-align: center;
+            font-size: 16px;
+            width: 80%;
+
+            color: $textGrey;
+
+            @media (min-width: 768px){
+                font-size: 26px;
+            }
+
+            @media (min-width: 1024px){
+                text-align: justify;
+                font-size: 18px;
+            }
+        }
+
+        .fifthSection__underline {
+            width: 50%;
+
+            @media (min-width: 1024px){
+                width: 1px;
+                height: 264px;
+                margin: 0 24px;
+            }
+        }
+
+            .fifthSection__skills {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 20px auto 60px;
+                width: 80%;
+                flex-wrap: wrap;
+
+                @media (min-width: 768px){
+                    width: 60%;
+                }
+
+                @media (min-width: 1024px){
+                    width: inherit;
+                }
+
+                &--container {
+                    display: flex;
+                    justify-content: center;
+                    height: 100px;
+                    width: 100px;
+                    margin: 10px;
+
+                    @media (min-width: 1024px){
+                        width: 120px;
+                        height: 120px;
+                    }
+                }
+
+                    img {
+                        object-fit: contain;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+    }
+}
