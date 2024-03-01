@@ -31,7 +31,7 @@ h1, h2, h3, h4 {
   font-family: "Ubuntu", sans-serif;
 }
 
-p, a, button {
+p, button {
   font-family: "Roboto", sans-serif;
 }
 
@@ -101,6 +101,7 @@ a {
   }
 }
 .firstSection .firstSection__content .firstSection__Calendly {
+  font-family: "Ubuntu", sans-serif;
   margin-top: 15px;
 }
 
@@ -656,6 +657,7 @@ footer .footer__logo img {
   width: 100%;
 }
 footer .footer__title {
+  font-family: "Ubuntu", sans-serif;
   margin: 10px auto;
   text-align: center;
   color: white;
@@ -675,6 +677,7 @@ footer .footer__agency, footer .footer__contact {
   flex-direction: column;
 }
 footer .footer__agency .footer__link, footer .footer__agency .footer__mail, footer .footer__contact .footer__link, footer .footer__contact .footer__mail {
+  font-family: "Ubuntu", sans-serif;
   margin: 5px auto;
   text-align: center;
   font-weight: 400;
@@ -720,6 +723,22 @@ footer .specialContainer {
     font-weight: 400;
     font-size: 64px;
   }
+}
+footer .footer__design {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+footer .footer__design--line {
+  width: 100%;
+  border: 1px;
+  color: white;
+}
+footer .footer__design--text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2px;
+  color: grey;
 }
 
 /* Le header du site sera défini ici */
@@ -836,6 +855,7 @@ header .navbar #navbarContent.active {
   right: 0%;
 }
 header .navbar .navbar__contact {
+  font-family: "Ubuntu", sans-serif;
   display: none;
 }
 @media (min-width: 1024px) {
@@ -904,6 +924,7 @@ header .navbar .navbar__contact {
   }
 }
 .firstSection .firstSection__content .firstSection__Calendly {
+  font-family: "Ubuntu", sans-serif;
   margin-top: 15px;
 }
 
@@ -1551,6 +1572,7 @@ header .navbar .navbar__contact {
   }
 }
 .firstSection .firstSection__content .firstSection__Calendly {
+  font-family: "Ubuntu", sans-serif;
   margin-top: 15px;
 }
 

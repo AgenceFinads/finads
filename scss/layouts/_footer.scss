@@ -33,6 +33,7 @@ footer {
     }
 
     .footer__title {
+        font-family: 'Ubuntu', sans-serif;
         margin: 10px auto;
         text-align: center;
         color: white;
@@ -51,6 +52,7 @@ footer {
         flex-direction: column;
 
         .footer__link, .footer__mail {
+            font-family: 'Ubuntu', sans-serif;
             margin: 5px auto;
             text-align: center;
             font-weight: 400;
@@ -99,8 +101,24 @@ footer {
                 font-size: 64px;
             }
         }
+    }
 
+    .footer__design {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 30%;
 
+        &--line {
+            width: 100%;
+            border: 1px;
+            color: white;
+        }
 
+        &--text {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 2px;
+            color: grey;
+        }
     }
 }
