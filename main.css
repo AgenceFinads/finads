@@ -622,6 +622,11 @@ a {
   color: teal;
 }
 
+/* Cette partie est dédiée aux personnalisation de texte */
+.gold:hover {
+  color: gold;
+}
+
 /* Le footer du site sera défini ici */
 footer {
   display: flex;
