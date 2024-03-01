@@ -13,19 +13,15 @@
 <header>
         <nav class="navbar">
 
-            <div class="navbar__logo">
-                <a href="/index.html">
-                    <img src="./image/logo/finads.png" alt="Logo de Finads">
-                </a>
+            <a href="/index.html" class="navbar__logo">
+                <img src="./image/logo/finads.png" alt="Logo de Finads">
+            </a>
+
+            <div id="navbar__burger">
+                <i class="fa-solid fa-bars"></i>
             </div>
 
-            <div class="navbar__burger">
-                <hr class="navbar__burger--line">
-                <hr class="navbar__burger--line">
-                <hr class="navbar__burger--line">
-            </div>
-
-            <div class="navbar__content">
+            <div id="navbarContent">
                 <a href="index.html" class="navbar__content--text">Accueil</a>
                 <a href="about.html" class="navbar__content--text">À propos</a>
                 <a href="portfolio.html" class="navbar__content--text">Portfolio</a>
@@ -224,9 +220,9 @@
     <!-- Il s'agit du menu de l'agence de Marketing Digital -->
     <div class="footer__agency">
         <h4 class="footer__title">Notre Agence</h4>
-        <a href="#" class="footer__link">À propos</a>
-        <a href="#" class="footer__link">Expertise</a>
-        <a href="#" class="footer__link">Portfolio</a>
+        <a href="./about.html" class="footer__link">À propos</a>
+        <a href="./index.html" class="footer__link">Expertise</a>
+        <a href="./portfolio.html" class="footer__link">Portfolio</a>
     </div>
     <div class="footer__contact">
         <h4 class="footer__title">Contact</h4>
@@ -242,4 +238,6 @@
         </a>
     </div>
 </footer>
+<script src="scss/vendors/index.js"></script>
 </body>
+</html>

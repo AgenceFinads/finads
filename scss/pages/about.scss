@@ -1,0 +1,120 @@
+/* Partie dédiée à la page à propos du site internet. */
+
+@import '../components/box';
+@import '../utils/functions';
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.about__firstContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 17.5vh;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+
+    &--title {
+        color: black;
+        margin: 35px auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .about__blueLine {
+        margin: 3px auto 0;
+        width: 60%;
+        border: 5px solid #00FFFF;
+        border-radius: 30px;
+
+        @media (min-width: 768px) {
+            width: 35%;
+        }
+
+        @media (min-width: 1024px) {
+            width: 25%;
+        }
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+
+    @media (min-width: 1024px) {
+        height: 70vh;
+    }
+
+    .about__profilePicture {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            height: 230px;
+            width: 230px;
+
+            @media (min-width: 768px){
+                height: 320px;
+                width: 100%;
+            }
+
+            @media (min-width: 1024px){
+                height: 320px;
+                width: 65%;
+            }
+    }
+
+    .about__underline {
+        width: 50%;
+
+            @media (min-width: 1024px){
+                width: 1px;
+                height: 264px;
+                margin: 0 24px;
+
+
+            }
+    }
+
+    .about__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        margin: 0 auto;
+        width: 80%;
+
+        &--title {
+            text-align: center;
+        }
+
+        &--text {
+            text-align: center;
+            font-size: 12px;
+
+            @media (min-width: 768px) {
+                font-size: 14px;
+            }
+
+            @media (min-width: 1024px) {
+                text-align: justify;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .about__displayFunction {
+        @media (min-width: 1024px){
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 auto 35px;
+            width: 80%;
+        }
+    }
+
+}

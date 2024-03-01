@@ -1,2 +1,5 @@
 /* Fonctions afférentes au site internet */
 
+@import '../utils/variables';
+
+$darker : darken($finadsBlue, 25%);

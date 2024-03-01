@@ -41,65 +41,76 @@ header {
             }
         }
 
-        .navbar__burger {
+        #navbar__burger {
             display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            height: 25%;
-            width: 20.5vw;
+            align-items: center;
+            transition: 0.5 ease-in-out;
 
             @media (min-width: 768px) {
                 height: 40%;
                 width: 8vw;
-
-                
             }
 
             @media (min-width: 1024px){
                 display: none;
             }
 
-            &--line {
-                margin: 0;
-                width: 100%;
-                border: 1.5px solid white;
-                border-radius: 30px;
+            i {
+                color: white;
+                font-size: 2.5vh;
+                cursor: pointer;
 
                 @media (min-width: 768px) {
-                    border: 2px solid white;
+                    font-size: 3vh;
                 }
             }
         }
 
-        .navbar__content {
-            display: none;
+        #navbarContent {
+            display: flex;
+            position: fixed;
+            top: 12.5vh;
+            right: -100%;
             flex-direction: column;
-            justify-content: space-between;
+            background-color: black;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            border-top: 1px solid white;
+            transition: 0.5s ease-in-out;
 
             @media (min-width: 1024px){
+                position: static;
+                background-color: none;
+                border-top: none;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 width: 30%;
             }
 
-            &--text {
-                font-size: 1.5vh;
+            .navbar__content--text {
+                font-size: 5.5vh;
+                font-family: 'Ubuntu';
                 color: white;
-                margin: 0;
-                transition: color 0.3s ease;
+                margin: 35px auto 35px;
 
                 &:hover {
-                    color: $finadsBlue;
+                    color: $darker;
                 }
 
                 @media (min-width: 1024px){
+                    font-family: 'Roboto' sans-serif;
                     font-size: 2.4vh;
                     font-weight: 600;
                     color: white;
                     margin: 0;
                 }
             }
+        }
+
+        #navbarContent.active {
+            right: 0%;
         }
 
         .navbar__contact {

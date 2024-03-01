@@ -56,6 +56,10 @@ footer {
             font-weight: 400;
             color: white;
 
+            &:hover {
+                color: $darker;
+            }
+
             @media (min-width: 768px){
                 font-size: 24px;
             }
