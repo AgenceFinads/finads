@@ -713,6 +713,13 @@ footer .specialContainer {
   margin: 10px auto;
   width: 80%;
 }
+footer .specialContainer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 64px;
+}
 @media (min-width: 1024px) {
   footer .specialContainer {
     display: flex;
