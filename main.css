@@ -54,6 +54,11 @@ a {
   height: 99.5vh;
   background-image: linear-gradient(to top, rgba(0, 255, 255, 0.5) 0%, rgb(0, 0, 0) 60%);
 }
+@media (min-width: 768px) {
+  .firstSection {
+    height: 115.5vh;
+  }
+}
 @media (min-width: 1024px) {
   .firstSection {
     height: 87.5vh;
@@ -889,6 +894,11 @@ header .navbar .navbar__contact {
   height: 99.5vh;
   background-image: linear-gradient(to top, rgba(0, 255, 255, 0.5) 0%, rgb(0, 0, 0) 60%);
 }
+@media (min-width: 768px) {
+  .firstSection {
+    height: 115.5vh;
+  }
+}
 @media (min-width: 1024px) {
   .firstSection {
     height: 87.5vh;
@@ -1450,7 +1460,7 @@ header .navbar .navbar__contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 90vh;
+  height: 115vh;
   width: 100%;
   background-color: black;
 }
@@ -1536,6 +1546,11 @@ header .navbar .navbar__contact {
   justify-content: center;
   height: 99.5vh;
   background-image: linear-gradient(to top, rgba(0, 255, 255, 0.5) 0%, rgb(0, 0, 0) 60%);
+}
+@media (min-width: 768px) {
+  .firstSection {
+    height: 115.5vh;
+  }
 }
 @media (min-width: 1024px) {
   .firstSection {
